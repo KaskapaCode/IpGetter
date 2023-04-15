@@ -18,4 +18,9 @@ function getINFO(ip){
         var marker = L.marker([lat, lng]).addTo(map);
     })
 }
-getINFO("192.212.174.101");
+
+
+fetch("https://api.ipify.org?format=json").then((res) => res.json()).then((res) => {
+        let ip = res.ip;
+        getINFO(ip);
+})
