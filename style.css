@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+header{
+    background-image: url(img/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+header h1{
+   margin: 0;
+   font-size: 30px;
+   margin: 30px;
+   font-weight: 500;
+   color: white;
+}
+header input {
+    height: 20px;
+    font-size: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 440px;
+    border: none;
+    padding: 20px;
+}
+header div{
+    display: flex;
+}
+header button{
+    height: 100%;
+    width: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background-color: black;
+}
+header input:focus{
+    outline: none;
+}
+header button:hover{
+    background-color: hsl(0, 0%, 17%);
+    cursor: pointer;
+}
+
+
+.info{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 225px;
+    width: 1000px;
+    height: 170px;
+
+    border-radius: 15px;
+}
+.info .whole{
+    display: flex;
+}
+.info .sec{
+    width: 160px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.info .sec p{
+    margin: 0;
+    color: hsl(0, 0%, 59%);
+    font-size: 13px;
+    font-weight: 500;
+}
+.info .sec h1{
+    margin-top: 15px;
+    font-weight: 500;
+}
+.vl{
+    height: 90px;
+    border: 1px solid hsl(0, 0%, 59%);
+    opacity: 20%;
+    margin-top: 40px;
+}
+#map { 
+    z-index: 0;
+    height: 450px;
+    width: 100%; 
+}
