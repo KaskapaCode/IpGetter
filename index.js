@@ -20,6 +20,7 @@ function getINFO(ip){
 }
 
 
+
 fetch("https://api.ipify.org?format=json").then((res) => res.json()).then((res) => {
         let ip = res.ip;
         getINFO(ip);
